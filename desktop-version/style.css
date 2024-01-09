@@ -1,0 +1,117 @@
+body{
+    background-color: hsl(235, 18%, 26%);
+    justify-items: center;
+    align-items: center;
+    max-width: 1440px;
+    min-width: 375px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    line-height: 24px;
+    font-family:'Roboto',sans-serif ;
+    color: hsl(235, 18%, 26%);
+}
+
+.main{
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    margin: auto;
+    max-width:810px ;
+    width: 810px;
+    max-height: 501px ;
+    height: 501px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 3.6fr 3fr ;
+    }
+
+.form{
+    height: 100%;
+    padding: 20px 30px;
+    display: grid;
+    row-gap:15px ;
+    column-gap: 15px;
+    justify-items: left;
+}
+.form h1{
+    font-size: 40px;
+    margin: 0;
+    
+}
+
+.form>p:first-of-type{
+    background-image: none;
+    padding: 0;
+}
+
+.form p{
+    font-size: 16px;
+    background-image: url(/images/icon-list.svg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    content: "";
+    clear: both;
+    display: table;
+    margin: 0;
+    padding-left: 30px;
+    height: min-content;
+
+}
+
+label{
+    color: rgb(36, 39, 66);
+    font-weight: 700;
+}
+
+.form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0px 0px 0px;
+}
+
+input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    height: 46px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(146, 148, 160);
+    border-style: solid;
+    font-size: 16px;
+    outline: none;
+}
+
+form button{
+    width: 100%;
+    height: 46px;
+    background-color:rgb(36, 39, 66) ;
+    border: 1px solid transparent ;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+}
+
+form button:hover{
+    background-color: hsl(4, 100%, 67%) ;
+    box-shadow: 1px 0.5px 2px hsla(4, 100%, 67%,50%) ;
+}
+
+.image-container{
+    background-image: url(/images/illustration-sign-up-desktop.svg);
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+}    
