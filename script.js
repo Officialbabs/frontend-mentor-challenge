@@ -1,4 +1,4 @@
-const submitForm = document.querySelector("#emailForm")
+const submitForm = document.querySelector("#emailform")
 
 submitForm.addEventListener("submit", function(e){
     e.preventDefault()
@@ -6,7 +6,7 @@ submitForm.addEventListener("submit", function(e){
     toggleCards()
     console.log("success", email)
 })
-const formCard = document.querySelector(".container"), successForm = document.querySelector(".success")
+const formCard = document.querySelector(".main"), successForm = document.querySelector(".success")
 const toggleCards = () => {
     formCard.classList.toggle("show")
     successForm.classList.toggle("show")
