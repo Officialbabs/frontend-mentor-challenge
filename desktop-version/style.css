@@ -1,0 +1,140 @@
+body{
+    background-color: hsl(235, 18%, 26%);
+    justify-items: center;
+    align-items: center;
+    max-width: 1440px;
+    min-width: 375px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    line-height: 24px;
+    font-family:'Roboto',sans-serif ;
+    color: hsl(235, 18%, 26%);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.main{
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    margin: auto;
+    max-width:810px ;
+    width: 810px;
+    max-height: 501px ;
+    height: 501px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 3.6655fr 3fr ;
+    }
+
+.form{
+    padding: 20px 30px;
+    display: grid;
+    row-gap:15px ;
+    column-gap: 15px;
+    justify-items: left;
+    justify-content: center;
+}
+.form h1{
+    font-size: 40px;
+    margin: 0;
+    overflow-wrap: break-word;
+    margin-top: 10px;
+    display: block;
+    height: 40px;
+    width: 100%;
+    }
+
+.form p:first-of-type{
+    background-image: none;
+    padding: 0;
+}
+
+.form p:last-of-type{
+    color: inherit;
+    font-size: 16px;
+}
+
+
+.form p{
+    font-size: 16px;
+    background-image: url(/images/icon-list.svg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    content: "";
+    clear: both;
+    display: table;
+    margin: 0;
+    padding-left: 30px;
+}
+
+label{
+    color: rgb(36, 39, 66);
+    font-weight: 700;
+}
+
+.form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0px 0px 0px;
+}
+
+input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    height: 46px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(146, 148, 160);
+    border-style: solid;
+    font-size: 16px;
+    outline: none;
+}
+
+form button{
+    width: 100%;
+    height: 46px;
+    background-color:rgb(36, 39, 66) ;
+    border: 1px solid transparent ;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+    padding: 10px;
+}
+
+form button:hover{
+    background-color: hsl(4, 100%, 67%) ;
+    box-shadow: 3px 10px 13px -6px hsl(4, 100%, 67%);
+}
+
+.image-container{
+    background-image: url(/images/illustration-sign-up-desktop.svg);
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    border-radius: 10px;
+    height: 100%;
+}
+
+body p:last-of-type{
+    color: white;
+    margin: 0;
+    font-size:11px ;
+}
+
+a{
+    color: rgb(146, 148, 160);
+}
