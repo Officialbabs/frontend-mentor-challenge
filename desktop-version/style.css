@@ -12,6 +12,10 @@ body{
     color: hsl(235, 18%, 26%);
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .main{
     background-color: white;
     border: none;
@@ -24,27 +28,37 @@ body{
     padding: 20px;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 3.6fr 3fr ;
+    grid-template-columns: 3.6655fr 3fr ;
     }
 
 .form{
-    height: 100%;
     padding: 20px 30px;
     display: grid;
     row-gap:15px ;
     column-gap: 15px;
     justify-items: left;
+    justify-content: center;
 }
 .form h1{
     font-size: 40px;
     margin: 0;
-    
-}
+    overflow-wrap: break-word;
+    margin-top: 10px;
+    display: block;
+    height: 40px;
+    width: 100%;
+    }
 
-.form>p:first-of-type{
+.form p:first-of-type{
     background-image: none;
     padding: 0;
 }
+
+.form p:last-of-type{
+    color: inherit;
+    font-size: 16px;
+}
+
 
 .form p{
     font-size: 16px;
@@ -56,8 +70,6 @@ body{
     display: table;
     margin: 0;
     padding-left: 30px;
-    height: min-content;
-
 }
 
 label{
@@ -98,11 +110,12 @@ form button{
     font-size: 16px;
     font-weight: 700;
     transition: all 300ms ease-in-out;
+    padding: 10px;
 }
 
 form button:hover{
     background-color: hsl(4, 100%, 67%) ;
-    box-shadow: 1px 0.5px 2px hsla(4, 100%, 67%,50%) ;
+    box-shadow: 3px 10px 13px -6px hsl(4, 100%, 67%);
 }
 
 .image-container{
@@ -111,7 +124,17 @@ form button:hover{
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     margin: 0;
     border-radius: 10px;
-}    
+    height: 100%;
+}
+
+body p:last-of-type{
+    color: white;
+    margin: 0;
+    font-size:11px ;
+}
+
+a{
+    color: rgb(146, 148, 160);
+}
